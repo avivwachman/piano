@@ -14,6 +14,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-image: linear-gradient(#b2fefa, #0ed2f7);
 }
 
 header h1 {
@@ -28,19 +29,24 @@ header p {
 .pads {
   width: 100%;
   display: flex;
-
 }
 .pads:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 .pads > div {
-  height: 100px;
+  height: 300px;
   width: 100px;
   flex: 1;
 }
+.white:active {
+  box-shadow: inset 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+}
 
-.pad0{
-   background: black;
+.black:active {
+  box-shadow: inset 0px 0px 26px 0px rgba(173, 212, 228, 0.75);
+}
+.pad0 {
+  background: black;
 }
 .pad1 {
   background: white;
@@ -67,3 +73,24 @@ cursor: pointer;
   background: black;
 }
 
+/* Make responive! */
+
+@media only screen and (max-width: 600px) {
+  .pads > div {
+    height: 200px;
+  }
+
+  header p {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    transform: translate(-50%, -90%);
+  }
+
+  .pads > div {
+    flex: 0.5;
+  }
+}
