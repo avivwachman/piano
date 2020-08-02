@@ -128,10 +128,13 @@ header p {
 }
 .white:active {
   box-shadow: inset 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
+  -webkit-appearance: none;
+  -webkit-box-shadow: inset 0px 0px 26px 0px rgba(0, 0, 0, 0.75);
 }
 
 .black:active {
   box-shadow: inset 0px 0px 26px 0px rgba(193, 207, 194, 0.75);
+  -webkit-box-shadow: inset 0px 0px 26px 0px rgba(193, 207, 194, 0.75);
 }
 .pad0 {
   background: black;

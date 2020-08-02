@@ -14,10 +14,10 @@ window.addEventListener("load", () => {
 const cursor = document.querySelector(".cursor");
 const title = document.querySelector(".title");
 const para = document.querySelector(".para");
+const bet = document.querySelector(".bet");
 const black = document.querySelectorAll(".black");
 const white = document.querySelectorAll(".white");
 const padsAll = document.querySelector(".pads");
-
 
 document.addEventListener("mousemove", (e) => {
   cursor.setAttribute(
@@ -44,7 +44,6 @@ black.forEach((one) => {
   });
 });
 
-
 white.forEach((one) => {
   one.addEventListener("mouseover", () => {
     cursor.classList.add("turn-black");
@@ -54,7 +53,6 @@ white.forEach((one) => {
     cursor.classList.remove("turn-black");
   });
 });
-
 
 title.addEventListener("mouseover", () => {
   cursor.classList.add("turn-white--text");
@@ -72,9 +70,17 @@ para.addEventListener("mouseleave", () => {
   cursor.classList.remove("turn-white--text");
 });
 
+bet.addEventListener("mouseover", () => {
+  cursor.classList.add("turn-white--text");
+});
+
+bet.addEventListener("mouseleave", () => {
+  cursor.classList.remove("turn-white--text");
+});
+
 // padsAll.addEventListener("mouseover", () => {
 //   cursor.classList.add("parade");
-  
+
 // });
 
 // padsAll.addEventListener("mouseleave", () => {
