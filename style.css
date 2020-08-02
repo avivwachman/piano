@@ -7,8 +7,7 @@
 body {
   font-family: "Raleway", sans-serif;
   cursor: none;
-    z-index: -3;
-
+  z-index: -3;
 }
 /* cursor */
 
@@ -58,34 +57,31 @@ body {
   }
 } */
 
-
 .click {
   animation: clicking 0.3s forwards;
 }
 
-
-.turn-white{
-transform: scale(1.5);
-border: 2px solid white;
+.turn-white {
+  transform: scale(1.5);
+  border: 2px solid white;
 }
 
-.turn-black{
-transform: scale(1.3);
-border: 1px solid black;
+.turn-black {
+  transform: scale(1.3);
+  border: 1px solid black;
 }
 
-.turn-white--text{
-transform: scale(2.4);
-border: 1px solid white;
-background-color: white;
-z-index: 1;
+.turn-white--text {
+  transform: scale(2.4);
+  border: 1px solid white;
+  background-color: white;
+  z-index: 1;
 }
 
 /* .parade {
   animation: paclicking 0.7s forwards;
 
 } */
-
 
 .app {
   position: relative;
@@ -107,17 +103,15 @@ header h1 {
 header p {
   position: relative;
   font-size: 25px;
-    z-index: 6;
-
+  z-index: 6;
 }
 
-.bet{
+.bet {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 60px;
   font-size: 15px;
-
 }
 
 .pads {
@@ -188,14 +182,11 @@ header p {
     flex: 0.5;
   }
 
-.cursor {
-display: none;
+  .cursor {
+    display: none;
+  }
 
-}
-
-body{
+  body {
     cursor: default;
-
-}
-
+  }
 }
