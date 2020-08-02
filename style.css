@@ -178,4 +178,15 @@ header p {
   .pads > div {
     flex: 0.5;
   }
+
+.cursor {
+display: none;
+
+}
+
+body{
+    cursor: default;
+
+}
+
 }
