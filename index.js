@@ -53,7 +53,7 @@ white.forEach((one) => {
     cursor.classList.remove("turn-black");
   });
 });
-
+//h
 title.addEventListener("mouseover", () => {
   cursor.classList.add("turn-white--text");
 });
